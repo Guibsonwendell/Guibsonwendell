@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula DOM</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button id="button-salvar">Enviar</button>
+
+    <section id="main-container">
+      <h1>Título</h1>
+      <p>parágrafo</p>
+    </section>
+
+    <button class="botao">botão 1</button>
+    <button class="botao">botão 2</button>
+    <button class="botao">botão 3</button>
+    <button class="botao">botão 4</button>
+    <button class="botao">botão 5</button>
+
+    <div
+      id="container-color"
+      onmouseover="mouseOn()"
+      onmouseout="mouseOut()"
+    ></div>
+    <p id="mouseEvent"></p>
+    <input type="text" value="" id="input-event" onchange="valorInput()" />
+    <ul id="lista-input"></ul>
+  </body>
+</html>

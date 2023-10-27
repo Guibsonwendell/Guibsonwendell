@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <title>Exercício 4</title>
+</head>
+<body>
+    <form action="#" method="post" id="form-publicar-nota">
+        <label for="nome-aluno">Nome:</label>
+        <input type="text" id="nome-aluno" value="" required>
+        <label for="matricula-aluno">Matrícula:</label>
+        <input type="number" id="matricula-aluno" value="" required>
+        <label for="av-1">Avaliação 1:</label>
+        <input type="checkbox" name="av-1" id="av-1" onchange="checkedAv()">
+        <label for="av-2">Avaliação 2:</label>
+        <input type="checkbox" name="av-2" id="av-2" onchange="checkedAv()">
+        <label for="matricula-aluno">Nota:</label>
+        <input type="number" id="nota-aluno" value="" required>
+        <button type="submit">Publicar</button>
+    </form>
+
+    <table id="quadro-notas">
+        <tr>
+            <td>Nome</td>
+            <td>Matrícula</td>
+            <td>Nota</td>
+          </tr>
+    </table>
+
+</body>
+</html>
